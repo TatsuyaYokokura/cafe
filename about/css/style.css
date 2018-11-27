@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*base*/
+html {
+  font-size: 62.5%;
+}
+body {
+	background-color: #f8f8f8;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+	color: #333;
+}
+li {
+  list-style-type: none;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*header*/
+#header {
+	width: 100%;
+  height: 500px;
+	background: url(../images/about_appearance_01.jpg) center center / cover no-repeat fixed;
+}
+#header h1 {
+	line-height: 500px;
+	text-align: center;
+	font-size: 4.8rem;
+	letter-spacing: 30px;
+	padding-left: 30px;
+	color: #fff;
+}
+
+/*main all detail*/
+#main {
+	width: 100%;
+	padding: 80px 0 0;
+}
+#main .ttl {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	letter-spacing: 0.8rem;
+}
+#main .sub_ttl {
+	text-align: center;
+	font-size: 1.6rem;
+	letter-spacing: 0.4rem;
+	margin-bottom: 30px;
+}
+#main .text {
+	text-align: center;
+	font-size: 1.2rem;
+	letter-spacing: 0.4rem;
+	line-height: 3.0rem;
+	margin: 50px 0;
+}
+#main .text .br-pc {
+	display: none;
+}
+#main .text .br-sp {
+	display: block;
+}
+#main .contents_box {
+	margin-bottom: 50px;
+}
+@media screen and (	min-width: 768px) {
+	#main .text .br-sp {
+		display: none;
+	}
+	#main .text .br-pc {
+		display: block;
+	}
+	#main {
+	padding: 120px 0 50px;
+	}
+	#main .ttl {
+		margin-bottom: 20px;
+		font-size: 3.0rem;
+	}
+	#main .sub_ttl {
+		margin-bottom: 80px;
+}
+	#main .text {
+		font-size: 1.5rem;
+		line-height: 3.6rem;
+		margin: 50px 0 80px;
+	}
+}
+
+
+/*slick slider*/
+.slider {
+	margin: 0 0 50px;
+}
+.slider img {
+	width: 100%;
+	height: auto;
+}
+.slick-prev::before, .slick-next::before {
+	font-size: 24px;
+}
+.center-item .slick-next {
+	right: 20px;
+	z-index: 99;
+}
+.center-item .slick-prev {
+	left: 15px;
+	z-index: 100;
+}
+.single-item .slick-prev::before,
+.single-item .slick-next::before {
+	color: #666;
+}
+.slick-dots {
+	bottom:-25px;
+}
+
+/*footer*/
+#footer {
+	width: 100%;
+}
+#footer .footer_link {
+	text-align: center;
+	margin-bottom: 30px;
+}
+#footer .footer_link li {
+	padding: 0 10px;
+	display: inline-block;
+}
+#fb_link {
+	display: block;
+	margin: 0 auto 50px;
+}
+#footer .copyright {
+	text-align: center;
+	font-size: 0.6rem;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
